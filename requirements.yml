@@ -6,10 +6,6 @@
   name: denics.htpc-nas
   path: roles/
 
-- src: https://github.com/denics/htpc-ansible-kodi-client.git
-  name: denics.kodi-client
-  path: roles/
-
 - src: https://github.com/denics/htpc-ansible-kodi-mysql.git
   name: denics.kodi-mysql
   path: roles/
