@@ -1,6 +1,6 @@
 [submodule "roles/denics.htpc-common"]
 	path = roles/denics.htpc-common
-	url = https://github.com/denics/htpc-ansible-common.git
+	url = git@github.com:denics/htpc-ansible-common.git
 [submodule "roles/denics.htpc-nas"]
 	path = roles/denics.htpc-nas
 	url = git@github.com:denics/htpc-ansible-htpc-nas.git

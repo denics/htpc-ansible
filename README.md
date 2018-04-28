@@ -4,7 +4,7 @@ HTPC Server Automation with [Kodi](http://kodi.tv), [Deluge](http://deluge-torre
 
 Using these roles:
   - [denics.htpc-common](https://github.com/denics/ansible-role-htpc-common)
-  - [denics.htpc_nas]
+  - [denics.htpc_nas](https://github.com/denics/htpc-ansible-htpc-nas)
   - [denics.kodi-mysql]
   - [denics.deluge]
   - [denics.sabnzbd]
