@@ -1,10 +1,9 @@
-
 ## htpc-ansible
 
 HTPC Server Automation with [Kodi](http://kodi.tv), [Deluge](http://deluge-torrent.org/) (Bittorent), [SABnzbd](http://sabnzbd.org/) (Usenet), [Radarr](https://radarr.video/), [Sonarr](https://sonarr.tv/), [Headphones](https://github.com/rembo10/headphones), [HTPC-Manager](https://github.com/Hellowlol/HTPC-Manager.git), [Tvheadend](https://tvheadend.org/) and [nzbToMedia](https://github.com/clinton-hall/nzbToMedia).
 
 Using these roles:
-  - [denics.htpc-common]
+  - [denics.htpc-common](https://github.com/denics/ansible-role-htpc-common)
   - [denics.htpc_nas]
   - [denics.kodi-mysql]
   - [denics.deluge]
@@ -148,6 +147,12 @@ cp custom.yml.sample custom.yml
 ```
 
 * Open `custom.yml` in your favorite editor and update variable values.
+* Create a vault with your passwords:
+
+```
+ansible-vault create custom/vault.yml
+```
+
 * Run Ansible Playbook from your localhost:
 
 __Server Mode:__

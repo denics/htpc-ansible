@@ -1,6 +1,6 @@
 # htpc-server.yml
 ---
-- hosts: all
+- hosts: mediaserver
   become: yes
 
   pre_tasks:
@@ -14,12 +14,12 @@
   roles:
   - { role: denics.htpc-common}
   - { role: denics.htpc_nas, when: htpc_nas_enabled }
-  - { role: denics.kodi-mysql, when: kodi_mysql_enabled }
-  - { role: denics.deluge, when: deluge_enabled }
-  - { role: denics.nzbToMedia, when: nzbToMedia_enabled }
-  - { role: denics.sabnzbd, when: sabnzbd_enabled }
-  - { role: denics.sonarr, when: sonarr_enabled }
-  - { role: denics.radarr, when: radarr_enabled }
-  - { role: denics.headphones, when: headphones_enabled }
-  - { role: denics.tvheadend, when: tvheadend_enabled }
-  - { role: denics.htpc-manager, when: htpc_manager_enabled }
+#  - { role: denics.kodi-mysql, when: kodi_mysql_enabled }
+#  - { role: denics.deluge, when: deluge_enabled }
+#  - { role: denics.nzbToMedia, when: nzbToMedia_enabled }
+#  - { role: denics.sabnzbd, when: sabnzbd_enabled }
+#  - { role: denics.sonarr, when: sonarr_enabled }
+##  - { role: denics.radarr, when: radarr_enabled }
+# - { role: denics.headphones, when: headphones_enabled }
+##  - { role: denics.tvheadend, when: tvheadend_enabled }
+#  - { role: denics.htpc-manager, when: htpc_manager_enabled }

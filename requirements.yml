@@ -1,4 +1,4 @@
-- src: https://github.com/denics/htpc-ansible-common.git
+- src: https://github.com/denics/ansible-role-htpc-common.git
   name: denics.htpc-common
   path: roles/
 

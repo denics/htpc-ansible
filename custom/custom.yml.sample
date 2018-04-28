@@ -2,17 +2,18 @@
 # Modify lines were defaults that need to be changed.
 
 # Switches to Enable/Disable Roles
+# By default nothing is enabled!
 
-# Don't disable kodi_client_enabled, kodi_mysql_enabled and htpc_nas_enabled
-# when installing with docker-kodi role.
-kodi_client_enabled: yes
-kodi_mysql_enabled: yes
-htpc_nas_enabled: yes
-deluge_enabled: yes
-sabnzbd_enabled: yes
-sickbeard_enabled: yes
-couchpotato_enabled: yes
-htpc_manager_enabled: yes
+htpc_nas_enabled: no
+kodi_mysql_enabled: no
+deluge_enabled: no
+sabnzbd_enabled: no
+nzbToMedia_enabled: no
+sonarr_enabled: no
+radarr_enabled: no
+headphones_enabled: no
+tvheadend_enabled: no
+htpc_manager_enabled: no
 
 
 # htpc-common role
@@ -23,17 +24,16 @@ htpc_user_username: htpc
 htpc_user_password: htpc
 htpc_user_group: htpc
 htpc_user_shell: /bin/bash
-htpc_user_sudo_access: yes
+htpc_user_sudo_access: no
 
 # services
-htpc_ssh_service: yes
 htpc_create_media_folders: yes
-htpc_zeroconf: yes
+htpc_ssh_service: yes
 
 # downloads and media directories
-htpc_media_path: /mnt/media
+htpc_media_path: /home/{{ htpc_user_username }}/
 htpc_media_movies: movies
-htpc_media_tv: tv
+htpc_media_tv: tv_shows
 htpc_media_music: music
 htpc_media_pictures: pictures
 htpc_downloads_complete: "{{ htpc_media_path }}/downloads/complete"
@@ -41,13 +41,8 @@ htpc_downloads_incomplete: "{{ htpc_media_path }}/downloads/incomplete"
 
 # Helper variable. In use by other roles
 # Change the way different service are resolved in configuration files.
-# Available values are zeroconf, hostname and staticip
-htpc_resolving: zeroconf
-
-# Helper variable. In use by other roles
-# When installed with docker role, make sure htpc user can access the docker daemon
-docker_group_members:
-  - "{{ htpc_user_username }}" 
+# Available values are hostname or staticip
+htpc_resolving: hostname
 
 
 # kodi-client role
