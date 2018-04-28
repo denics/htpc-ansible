@@ -22,6 +22,9 @@
 [submodule "roles/denics.headphones"]
 	path = roles/denics.headphones
 	url = https://github.com/denics/htpc-ansible-headphones.git
+[submodule "roles/denics.tvheadend"]
+	path = roles/denics.tvheadend
+	url = https://github.com/denics/htpc-ansible-tvheadend.git
 [submodule "roles/denics.nzbtomedia"]
 	path = roles/denics.nzbtomedia
 	url = https://github.com/denics/htpc-ansible-nzbtomedia.git

@@ -2,38 +2,42 @@
   name: denics.htpc-common
   path: roles/
 
-#- src: https://github.com/denics/htpc-ansible-kodi-client.git
-#  name: denics.kodi-client
-#  path: roles/
+- src: https://github.com/denics/htpc-ansible-kodi-client.git
+  name: denics.kodi-client
+  path: roles/
 
-#- src: https://github.com/denics/htpc-ansible-kodi-mysql.git
-#  name: denics.kodi-mysql
-#  path: roles/
+- src: https://github.com/denics/htpc-ansible-kodi-mysql.git
+  name: denics.kodi-mysql
+  path: roles/
 
-#- src: https://github.com/denics/htpc-ansible-htpc-nas.git
-#  name: denics.htpc-nas
-#  path: roles/
+- src: https://github.com/denics/htpc-ansible-htpc-nas.git
+  name: denics.htpc-nas
+  path: roles/
 
-#- src: https://github.com/denics/htpc-ansible-radarr.git
-#  name: denics.radarr
-#  path: roles/
+- src: https://github.com/denics/htpc-ansible-radarr.git
+  name: denics.radarr
+  path: roles/
 
-#- src: https://github.com/denics/htpc-ansible-sonarr.git
-#  name: denics.sonarr
-#  path: roles/
+- src: https://github.com/denics/htpc-ansible-sonarr.git
+  name: denics.sonarr
+  path: roles/
 
-#- src: https://github.com/denics/htpc-ansible-headphones.git
-#  name: denics.headphones
-#  path: roles/
+- src: https://github.com/denics/htpc-ansible-headphones.git
+  name: denics.headphones
+  path: roles/
 
-#- src: https://github.com/denics/htpc-ansible-nzbtomedia.git
-#  name: denics.nzbtomedia
-#  path: roles/
+- src: https://github.com/denics/htpc-ansible-tvheadend.git
+  name: denics.tvheadend
+  path: roles/
 
-#- src: https://github.com/denics/htpc-ansible-deluge.git
-#  name: denics.deluge
-#  path: roles/
+- src: https://github.com/denics/htpc-ansible-nzbtomedia.git
+  name: denics.nzbtomedia
+  path: roles/
 
-#- src: https://github.com/denics/htpc-ansible-htpc-manager.git
-#  name: denics.htpc-manager
-#  path: roles/
+- src: https://github.com/denics/htpc-ansible-deluge.git
+  name: denics.deluge
+  path: roles/
+
+- src: https://github.com/denics/htpc-ansible-htpc-manager.git
+  name: denics.htpc-manager
+  path: roles/
