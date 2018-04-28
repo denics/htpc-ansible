@@ -13,7 +13,7 @@
 
   roles:
   - { role: denics.htpc-common}
-  - { role: denics.htpc_nas, when: htpc_nas_enabled }
+  - { role: denics.htpc-nas, when: htpc_nas_enabled }
 #  - { role: denics.kodi-mysql, when: kodi_mysql_enabled }
 #  - { role: denics.deluge, when: deluge_enabled }
 #  - { role: denics.nzbToMedia, when: nzbToMedia_enabled }

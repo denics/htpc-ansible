@@ -31,7 +31,7 @@ htpc_create_media_folders: yes
 htpc_ssh_service: yes
 
 # downloads and media directories
-htpc_media_path: /home/{{ htpc_user_username }}/
+htpc_media_path: /home/{{ htpc_user_username }}
 htpc_media_movies: movies
 htpc_media_tv: tv_shows
 htpc_media_music: music
@@ -43,6 +43,28 @@ htpc_downloads_incomplete: "{{ htpc_media_path }}/downloads/incomplete"
 # Change the way different service are resolved in configuration files.
 # Available values are hostname or staticip
 htpc_resolving: hostname
+
+# htpc-nas role
+# -------------
+
+# Enable NFS sharing ( Used by Kodi to share media )
+htpc_nas_nfs: yes
+# Enable Windows Sharing
+htpc_nas_cifs: yes
+# Enable Mac Sharing
+htpc_nas_afp: yes
+# The name of your workgroup
+htpc_nas_samba_domain: WORKGROUP
+
+
+
+
+
+
+
+
+
+
 
 
 # kodi-client role
@@ -68,15 +90,6 @@ kodi_mysqldb_user: kodi
 kodi_mysqldb_password: kodi
 
 
-# htpc-nas role
-# -------------
-
-# Enable NFS sharing ( Used by Kodi to share media )
-htpc_nas_nfs: yes
-# Enable Windows Sharing
-htpc_nas_cifs: yes
-# Enable Mac Sharing
-htpc_nas_afp: yes
 
 
 # deluge role
