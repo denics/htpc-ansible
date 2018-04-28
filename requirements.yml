@@ -1,31 +1,39 @@
-- src: https://github.com/GR360RY/ansible-role-htpc-common.git
-  name: GR360RY.htpc-common
+- src: https://github.com/denics/htpc-ansible-common.git
+  name: denics.htpc-common
   path: roles/
 
-- src: https://github.com/GR360RY/ansible-role-kodi-client.git
-  name: GR360RY.kodi-client
-  path: roles/
+#- src: https://github.com/denics/htpc-ansible-kodi-client.git
+#  name: denics.kodi-client
+#  path: roles/
 
-- src: https://github.com/GR360RY/ansible-role-kodi-mysql.git
-  name: GR360RY.kodi-mysql
-  path: roles/
+#- src: https://github.com/denics/htpc-ansible-kodi-mysql.git
+#  name: denics.kodi-mysql
+#  path: roles/
 
-- src: https://github.com/GR360RY/ansible-role-htpc-nas.git
-  name: GR360RY.htpc-nas
-  path: roles/
+#- src: https://github.com/denics/htpc-ansible-htpc-nas.git
+#  name: denics.htpc-nas
+#  path: roles/
 
-- src: https://github.com/GR360RY/ansible-role-nzbtomedia.git
-  name: GR360RY.nzbtomedia
-  path: roles/
+#- src: https://github.com/denics/htpc-ansible-radarr.git
+#  name: denics.radarr
+#  path: roles/
 
-- src: https://github.com/GR360RY/ansible-role-deluge.git
-  name: GR360RY.deluge
-  path: roles/
+#- src: https://github.com/denics/htpc-ansible-sonarr.git
+#  name: denics.sonarr
+#  path: roles/
 
-- src: https://github.com/GR360RY/ansible-role-sickrage.git
-  name: GR360RY.sickrage
-  path: roles/
+#- src: https://github.com/denics/htpc-ansible-headphones.git
+#  name: denics.headphones
+#  path: roles/
 
-- src: https://github.com/GR360RY/ansible-role-htpc-manager.git
-  name: GR360RY.htpc-manager
-  path: roles/
+#- src: https://github.com/denics/htpc-ansible-nzbtomedia.git
+#  name: denics.nzbtomedia
+#  path: roles/
+
+#- src: https://github.com/denics/htpc-ansible-deluge.git
+#  name: denics.deluge
+#  path: roles/
+
+#- src: https://github.com/denics/htpc-ansible-htpc-manager.git
+#  name: denics.htpc-manager
+#  path: roles/
