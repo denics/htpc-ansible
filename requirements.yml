@@ -1,5 +1,9 @@
-- src: https://github.com/denics/ansible-role-htpc-common.git
+- src: https://github.com/denics/htpc-ansible-common.git
   name: denics.htpc-common
+  path: roles/
+
+- src: https://github.com/denics/htpc-ansible-htpc-nas.git
+  name: denics.htpc-nas
   path: roles/
 
 - src: https://github.com/denics/htpc-ansible-kodi-client.git
@@ -8,10 +12,6 @@
 
 - src: https://github.com/denics/htpc-ansible-kodi-mysql.git
   name: denics.kodi-mysql
-  path: roles/
-
-- src: https://github.com/denics/htpc-ansible-htpc-nas.git
-  name: denics.htpc-nas
   path: roles/
 
 - src: https://github.com/denics/htpc-ansible-radarr.git
