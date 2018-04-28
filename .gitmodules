@@ -1,36 +1,3 @@
 [submodule "roles/denics.htpc-common"]
 	path = roles/denics.htpc-common
-	url = https://github.com/denics/htpc-ansible-common.git
-[submodule "roles/denics.htpc-nas"]
-	path = roles/denics.htpc-nas
-	url = https://github.com/denics/htpc-ansible-htpc-nas.git
-[submodule "roles/denics.kodi-client"]
-	path = roles/denics.kodi-client
-	url = https://github.com/denics/htpc-ansible-kodi-client.git
-[submodule "roles/denics.kodi-mysql"]
-	path = roles/denics.kodi-mysql
-	url = https://github.com/denics/htpc-ansible-kodi-mysql.git
-[submodule "roles/denics.deluge"]
-	path = roles/denics.deluge
-	url = https://github.com/denics/htpc-ansible-deluge.git
-[submodule "roles/denics.sonarr"]
-	path = roles/denics.sonarr
-	url = https://github.com/denics/htpc-ansible-sonarr.git
-[submodule "roles/denics.radarr"]
-	path = roles/denics.radarr
-	url = https://github.com/denics/htpc-ansible-radarr.git
-[submodule "roles/denics.headphones"]
-	path = roles/denics.headphones
-	url = https://github.com/denics/htpc-ansible-headphones.git
-[submodule "roles/denics.tvheadend"]
-	path = roles/denics.tvheadend
-	url = https://github.com/denics/htpc-ansible-tvheadend.git
-[submodule "roles/denics.nzbtomedia"]
-	path = roles/denics.nzbtomedia
-	url = https://github.com/denics/htpc-ansible-nzbtomedia.git
-[submodule "roles/denics.htpc-manager"]
-	path = roles/denics.htpc-manager
-	url = https://github.com/denics/htpc-ansible-htpc-manager.git
-[submodule "roles/denics.sabnzbd"]
-	path = roles/denics.sabnzbd
-	url = https://github.com/denics/ansible-role-sabnzbd.git
+	url = https://github.com/denics/ansible-role-htpc-common.git

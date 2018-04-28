@@ -5,20 +5,21 @@
 
   pre_tasks:
 
-    # Copy custom/custom.yml.sample to custom/custom.yml
-    # Update variable values
-    - name: Load custom variables from custom.yml
-      include_vars: custom/custom.yml
-      failed_when: false
+  # Copy custom/custom.yml.sample to custom/custom.yml
+  # Update variable values
+  - name: Load custom variables from custom.yml
+    include_vars: custom/custom.yml
+    failed_when: false
 
-  # docker-kodi will also install kodi-mysql and htpc-nas
   roles:
-    - { role: denics.docker-kodi, when: kodi_client_enabled }
-    - { role: denics.kodi-mysql, when: kodi_mysql_enabled }
-    - { role: denics.deluge, when: deluge_enabled }
-    - { role: denics.sabnzbd, when: sabnzbd_enabled }
-    - { role: denics.sonarr, when: sonarr_enabled }
-    - { role: denics.radarr, when: radarr_enabled }
-    - { role: denics.headphones, when: headphones_enabled }
-    - { role: denics.tvheadend, when: tvheadend_enabled }
-    - { role: denics.htpc-manager, when: htpc_manager_enabled }
+  - { role: denics.htpc-common}
+  - { role: denics.htpc_nas, when: htpc_nas_enabled }
+  - { role: denics.kodi-mysql, when: kodi_mysql_enabled }
+  - { role: denics.deluge, when: deluge_enabled }
+  - { role: denics.nzbToMedia, when: nzbToMedia_enabled }
+  - { role: denics.sabnzbd, when: sabnzbd_enabled }
+  - { role: denics.sonarr, when: sonarr_enabled }
+  - { role: denics.radarr, when: radarr_enabled }
+  - { role: denics.headphones, when: headphones_enabled }
+  - { role: denics.tvheadend, when: tvheadend_enabled }
+  - { role: denics.htpc-manager, when: htpc_manager_enabled }
