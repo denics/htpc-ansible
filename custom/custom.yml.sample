@@ -6,9 +6,9 @@
 
 htpc_nas_enabled: no
 kodi_mysql_enabled: no
+nzbToMedia_enabled: no
 deluge_enabled: no
 sabnzbd_enabled: no
-nzbToMedia_enabled: no
 sonarr_enabled: no
 radarr_enabled: no
 headphones_enabled: no
@@ -58,8 +58,7 @@ htpc_nas_samba_domain: WORKGROUP
 
 ---
 # defaults file for kodi
-# set to 'kodi' to run Kodi as standalone Xsession.
-kodi_config_path: /usr/share/kodi/
+kodi_config_path: "/home/{{ htpc_user_username }}/.kodi/"
 kodi_device_name: "kodi"
 kodi_mysqldb_host: "{{ ansible_default_ipv4.address }}"
 kodi_mysqldb_user: "{{ htpc_user_username }}"
@@ -73,6 +72,31 @@ kodi_webserver_port: 8080
 kodi_web_server_username: "{{ htpc_user_username }}"
 kodi_web_server_password: "{{ htpc_user_password }}"
 kodi_zeroconf: true
+
+---
+# defaults file for nzbtomedia
+
+nzbtomedia_path: /srv/nzbtomedia
+
+
+
+
+
+
+
+# deluge role
+# -----------
+
+# Deluge Daemon Path
+deluged_path: /opt/deluged
+# Deluge Incomplete download locations
+deluged_incomplete: "{{ htpc_downloads_incomplete }}/deluged"
+# Password for localclient user.
+deluged_localclient_password: 2b9cf85259f2149da47458eda73ba23ac06faa21
+deluged_port: 58846
+deluge_web_port: 8112
+
+
 
 
 

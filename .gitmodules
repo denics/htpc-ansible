@@ -10,3 +10,6 @@
 [submodule "roles/denics.htpc-deluge"]
 	path = roles/denics.htpc-deluge
 	url = git@github.com:denics/htpc-ansible-deluge.git
+[submodule "roles/denics.htpc-nzbtomedia"]
+	path = roles/denics.htpc-nzbtomedia
+	url = git@github.com:denics/htpc-ansible-nzbtomedia.git
