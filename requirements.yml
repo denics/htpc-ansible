@@ -10,12 +10,12 @@
   name: denics.htpc-kodi
   path: roles/
 
-- src: https://github.com/denics/htpc-ansible-radarr.git
-  name: denics.radarr
+- src: https://github.com/denics/htpc-ansible-sickrage.git
+  name: denics.htpc-sickrage
   path: roles/
 
-- src: https://github.com/denics/htpc-ansible-sonarr.git
-  name: denics.sonarr
+- src: https://github.com/denics/htpc-ansible-radarr.git
+  name: denics.radarr
   path: roles/
 
 - src: https://github.com/denics/htpc-ansible-headphones.git

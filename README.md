@@ -1,14 +1,14 @@
 ## htpc-ansible
 
-HTPC Server Automation with [Kodi](http://kodi.tv), [Deluge](http://deluge-torrent.org/) (Bittorent), [SABnzbd](http://sabnzbd.org/) (Usenet), [Radarr](https://radarr.video/), [Sonarr](https://sonarr.tv/), [Headphones](https://github.com/rembo10/headphones), [HTPC-Manager](https://github.com/Hellowlol/HTPC-Manager.git), [Tvheadend](https://tvheadend.org/) and [nzbToMedia](https://github.com/clinton-hall/nzbToMedia).
+HTPC Server Automation with [Kodi](http://kodi.tv), [Deluge](http://deluge-torrent.org/) (Bittorent), [SABnzbd](http://sabnzbd.org/) (Usenet), [Radarr](https://radarr.video/), [Sickrage](https://sickrage.ca/), [Headphones](https://github.com/rembo10/headphones), [HTPC-Manager](https://github.com/Hellowlol/HTPC-Manager.git), [Tvheadend](https://tvheadend.org/) and [nzbToMedia](https://github.com/clinton-hall/nzbToMedia).
 
 Using these roles:
   - [denics.htpc-common](https://github.com/denics/ansible-role-htpc-common)
-  - [denics.htpc_nas](https://github.com/denics/htpc-ansible-htpc-nas)
-  - [denics.kodi-mysql]
+  - [denics.htpc-nas](https://github.com/denics/htpc-ansible-htpc-nas)
+  - [denics.htpc-kodi](https://github.com/denics/htpc-ansible-kodi)
   - [denics.deluge]
+  - [denics.htpc-sickrage]
   - [denics.sabnzbd]
-  - [denics.sonarr]
   - [denics.radarr]
   - [denics.headphones]
   - [denics.tvheadend]
