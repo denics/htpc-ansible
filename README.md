@@ -6,13 +6,13 @@ Using these roles:
   - [denics.htpc-common](https://github.com/denics/ansible-role-htpc-common)
   - [denics.htpc-nas](https://github.com/denics/htpc-ansible-htpc-nas)
   - [denics.htpc-kodi](https://github.com/denics/htpc-ansible-kodi)
-  - [denics.deluge]
-  - [denics.htpc-sickrage]
-  - [denics.sabnzbd]
+  - [denics.htpc-sickrage](https://github.com/denics/htpc-ansible-sickrage)
   - [denics.radarr]
   - [denics.headphones]
-  - [denics.tvheadend]
+  - [denics.deluge]
+  - [denics.sabnzbd]
   - [denics.nzbToMedia]
+  - [denics.tvheadend]
   - [denics.htpc-manager]
 
 ## Overview

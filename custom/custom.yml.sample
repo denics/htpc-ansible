@@ -6,12 +6,12 @@
 
 htpc_nas_enabled: no
 kodi_mysql_enabled: no
+sickrage_enabled: no
+radarr_enabled: no
+headphones_enabled: no
 nzbToMedia_enabled: no
 deluge_enabled: no
 sabnzbd_enabled: no
-sonarr_enabled: no
-radarr_enabled: no
-headphones_enabled: no
 tvheadend_enabled: no
 htpc_manager_enabled: no
 
@@ -56,8 +56,8 @@ htpc_nas_afp: yes
 # The name of your workgroup
 htpc_nas_samba_domain: WORKGROUP
 
----
 # defaults file for kodi
+# ----------------------
 kodi_config_path: "/home/{{ htpc_user_username }}/.kodi/"
 kodi_device_name: "kodi"
 kodi_mysqldb_host: "{{ ansible_default_ipv4.address }}"
@@ -72,6 +72,31 @@ kodi_webserver_port: 8080
 kodi_web_server_username: "{{ htpc_user_username }}"
 kodi_web_server_password: "{{ htpc_user_password }}"
 kodi_zeroconf: true
+
+# defaults file for sickrage
+# --------------------------
+sickrage_path: /srv/sickrage
+sickrage_repo: https://git.sickrage.ca/SiCKRAGE/sickrage.git
+sickrage_branch: master
+sickrage_api_key: 
+sickrage_host: "{{ ansible_default_ipv4.address }}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 # defaults file for nzbtomedia
