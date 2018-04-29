@@ -6,8 +6,8 @@
   name: denics.htpc-nas
   path: roles/
 
-- src: https://github.com/denics/htpc-ansible-kodi-mysql.git
-  name: denics.kodi-mysql
+- src: https://github.com/denics/htpc-ansible-kodi.git
+  name: denics.htpc-kodi
   path: roles/
 
 - src: https://github.com/denics/htpc-ansible-radarr.git

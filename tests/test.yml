@@ -4,3 +4,4 @@
   roles:
   - denics.htpc-common
   - denics.htpc-nas
+  - denics.htpc-kodi

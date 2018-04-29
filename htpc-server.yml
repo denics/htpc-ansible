@@ -14,7 +14,7 @@
   roles:
   - { role: denics.htpc-common}
   - { role: denics.htpc-nas, when: htpc_nas_enabled }
-  - { role: denics.kodi-mysql, when: kodi_mysql_enabled }
+  - { role: denics.htpc-kodi, when: kodi_mysql_enabled }
 #  - { role: denics.deluge, when: deluge_enabled }
 #  - { role: denics.nzbToMedia, when: nzbToMedia_enabled }
 #  - { role: denics.sabnzbd, when: sabnzbd_enabled }

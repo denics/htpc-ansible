@@ -4,3 +4,6 @@
 [submodule "roles/denics.htpc-nas"]
 	path = roles/denics.htpc-nas
 	url = git@github.com:denics/htpc-ansible-htpc-nas.git
+[submodule "roles/denics.htpc-kodi"]
+	path = roles/denics.htpc-kodi
+	url = git@github.com:denics/htpc-ansible-kodi
