@@ -7,3 +7,6 @@
 [submodule "roles/denics.htpc-kodi"]
 	path = roles/denics.htpc-kodi
 	url = git@github.com:denics/htpc-ansible-kodi
+[submodule "roles/denics.htpc-deluge"]
+	path = roles/denics.htpc-deluge
+	url = git@github.com:denics/htpc-ansible-deluge.git
