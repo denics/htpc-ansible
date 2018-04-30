@@ -4,7 +4,6 @@
   become: yes
 
   pre_tasks:
-
   # Copy custom/custom.yml.sample to custom/custom.yml
   # Update variable values
   - name: Load custom variables from custom.yml
