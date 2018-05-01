@@ -9,16 +9,17 @@
   - name: Load custom variables from custom.yml
     include_vars: custom/custom.yml
     failed_when: false
+    tags: pre
 
   roles:
-  - { role: denics.htpc-common}
-  - { role: denics.htpc-nas, when: htpc_nas_enabled }
-  - { role: denics.htpc-kodi, when: kodi_mysql_enabled }
-  - { role: denics.htpc-sickrage, when: sickrage_enabled }
-#  - { role: denics.radarr, when: radarr_enabled }
-#  - { role: denics.htpc-nzbtomedia, when: nzbToMedia_enabled }
-#  - { role: denics.deluge, when: deluge_enabled }
-#  - { role: denics.sabnzbd, when: sabnzbd_enabled }
-# - { role: denics.headphones, when: headphones_enabled }
-##  - { role: denics.tvheadend, when: tvheadend_enabled }
-#  - { role: denics.htpc-manager, when: htpc_manager_enabled }
+  - { role: denics.htpc-common, tags: common }
+  - { role: denics.htpc-nas, tags: nas, when: htpc_nas_enabled }
+  - { role: denics.htpc-kodi, tags: kodi, when: kodi_mysql_enabled }
+  - { role: denics.htpc-deluge, tags: deluge, when: deluge_enabled }
+#  - { role: denics.htpc-sabnzbd, tags: sabnzbd, when: sabnzbd_enabled }
+#  - { role: denics.htpc-nzbtomedia, tags: nzbtomedia, when: nzbToMedia_enabled }
+  - { role: denics.htpc-sickrage, tags: sickrage, when: sickrage_enabled }
+#  - { role: denics.htpc-radarr, tags: radarr, when: radarr_enabled }
+#  - { role: denics.htpc-headphones, tags: headphones, when: headphones_enabled }
+#  - { role: denics.htpc-tvheadend, tags: tvheadend, when: tvheadend_enabled }
+#  - { role: denics.htpc-manager, tags: htpc-manager, when: htpc_manager_enabled }
